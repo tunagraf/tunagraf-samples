@@ -1,0 +1,107 @@
+{
+  "formatVersion": "0.1",
+  "nodes": [
+    {
+      "key": "node73c5f621fb584d3ceb9b7767cad9",
+      "x": 207.4433713019732,
+      "y": 229.4971297456925,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ],
+      "type": "event"
+    },
+    {
+      "key": "node9b6435aec0adf15d13f5cbeb61e0",
+      "x": 685.4214876033058,
+      "y": 190.51239669421483,
+      "values": [
+        {
+          "name": "value",
+          "value": "finished"
+        }
+      ],
+      "type": "log"
+    },
+    {
+      "key": "nodeab17a261ca90c40e86f11599b326",
+      "x": -40.85498059718455,
+      "y": 294.5289256198347,
+      "type": "time.elapsed"
+    },
+    {
+      "key": "node29da03a5fb2a569e8fa074f65696",
+      "x": 455,
+      "y": 231,
+      "type": "while"
+    },
+    {
+      "key": "nodef9b5bbbcc4fc3c13f9ba69b491a2",
+      "x": 688.297520661157,
+      "y": 274.09917355371886,
+      "values": [
+        {
+          "name": "value",
+          "value": "a"
+        }
+      ],
+      "type": "log"
+    },
+    {
+      "key": "node7dc52c79cfbf0f5f18d7c9d29f5c",
+      "x": 47.17355371900828,
+      "y": 394.5289256198347,
+      "values": [
+        {
+          "name": "value",
+          "value": "3000.0"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "key": "node86df3e7f66e661113c7b01bf8842",
+      "x": 236.17355371900828,
+      "y": 373.5289256198347,
+      "values": [
+        {
+          "name": "b",
+          "value": "3000"
+        }
+      ],
+      "type": "<"
+    }
+  ],
+  "connections": [
+    {
+      "from": "node73c5f621fb584d3ceb9b7767cad9:o:",
+      "to": "node29da03a5fb2a569e8fa074f65696:i:"
+    },
+    {
+      "from": "node29da03a5fb2a569e8fa074f65696:o:",
+      "to": "node9b6435aec0adf15d13f5cbeb61e0:i:"
+    },
+    {
+      "from": "node29da03a5fb2a569e8fa074f65696:o:func",
+      "to": "nodef9b5bbbcc4fc3c13f9ba69b491a2:i:"
+    },
+    {
+      "from": "nodeab17a261ca90c40e86f11599b326:o:timeMsec",
+      "to": "node86df3e7f66e661113c7b01bf8842:i:a"
+    },
+    {
+      "from": "node7dc52c79cfbf0f5f18d7c9d29f5c:o:",
+      "to": "node86df3e7f66e661113c7b01bf8842:i:b"
+    },
+    {
+      "from": "nodeab17a261ca90c40e86f11599b326:o:timeMsec",
+      "to": "nodef9b5bbbcc4fc3c13f9ba69b491a2:i:value"
+    },
+    {
+      "from": "node86df3e7f66e661113c7b01bf8842:o:condition",
+      "to": "node29da03a5fb2a569e8fa074f65696:i:condition"
+    }
+  ]
+}

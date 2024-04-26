@@ -1,0 +1,79 @@
+{
+  "formatVersion": "0.1",
+  "nodes": [
+    {
+      "name": "event",
+      "key": "node9e73eceb3491296e3394e13f8f5e",
+      "x": 252.0317327613758,
+      "y": 201.80365455569446,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ]
+    },
+    {
+      "name": "log",
+      "key": "node1245c9d6074d951ea3f3b9214999",
+      "x": 888,
+      "y": 221
+    },
+    {
+      "name": "time.elapsed",
+      "key": "node1d41c65bfe0230653ebf04bf7b00",
+      "x": 621.3436112023148,
+      "y": 331.4953416629998
+    },
+    {
+      "name": "time.wait",
+      "key": "nodeb91e7e7987745979a83b57636810",
+      "x": 1081,
+      "y": 221,
+      "values": [
+        {
+          "name": "msec",
+          "value": "500"
+        }
+      ]
+    },
+    {
+      "name": "for",
+      "key": "nodefba3f0cbd42e4acaa65d42857572",
+      "x": 442.7859364062561,
+      "y": 201.72870452391427,
+      "values": [
+        {
+          "name": "begin",
+          "value": "0"
+        },
+        {
+          "name": "to",
+          "value": "5"
+        },
+        {
+          "name": "step",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "node1d41c65bfe0230653ebf04bf7b00:o:0",
+      "to": "node1245c9d6074d951ea3f3b9214999:i:1"
+    },
+    {
+      "from": "node1245c9d6074d951ea3f3b9214999:o:0",
+      "to": "nodeb91e7e7987745979a83b57636810:i:0"
+    },
+    {
+      "from": "node9e73eceb3491296e3394e13f8f5e:o:0",
+      "to": "nodefba3f0cbd42e4acaa65d42857572:i:0"
+    },
+    {
+      "from": "nodefba3f0cbd42e4acaa65d42857572:o:1",
+      "to": "node1245c9d6074d951ea3f3b9214999:i:0"
+    }
+  ]
+}

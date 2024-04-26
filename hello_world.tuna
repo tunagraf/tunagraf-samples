@@ -1,0 +1,35 @@
+{
+  "formatVersion": "0.1",
+  "nodes": [
+    {
+      "key": "node-event-ccfb806f1ef77a8a4d2de84c9c07",
+      "type": "event",
+      "x": -205.04413340402806,
+      "y": -136.7450981571705,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ]
+    },
+    {
+      "key": "node-log-3f739925b81b38407241e1073d6a",
+      "type": "log",
+      "x": -2.1599664016006273,
+      "y": -136.0489377635817,
+      "values": [
+        {
+          "name": "value",
+          "value": "HelloWorld"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "node-event-ccfb806f1ef77a8a4d2de84c9c07:o:",
+      "to": "node-log-3f739925b81b38407241e1073d6a:i:"
+    }
+  ]
+}

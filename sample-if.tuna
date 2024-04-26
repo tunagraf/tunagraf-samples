@@ -1,0 +1,93 @@
+{
+  "formatVersion": "0.2",
+  "nodes": [
+    {
+      "key": "node-if-22b540c1ed59b42606e152b69dea",
+      "type": "if",
+      "x": 247.3724880382775,
+      "y": 140.9665071770335
+    },
+    {
+      "key": "node-event-68740392e6ec3450e5d3177912b4",
+      "type": "event",
+      "x": 17.305502392344547,
+      "y": 140.00789473684213,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ]
+    },
+    {
+      "key": "node-log-e48f2eed3e78c5e33f31ee19faa7",
+      "type": "log",
+      "x": 484.95584507952935,
+      "y": 107.79290950869898,
+      "values": [
+        {
+          "name": "value",
+          "value": "value is true"
+        }
+      ]
+    },
+    {
+      "key": "node-log-12a3e3806a37b4421119a6e76f72",
+      "type": "log",
+      "x": 483.0386201991465,
+      "y": 190.2335793651583,
+      "values": [
+        {
+          "name": "value",
+          "value": "value is false"
+        }
+      ]
+    },
+    {
+      "key": "node-number-533e7dc35364c5cef91bf79fb8d2",
+      "type": "number",
+      "x": -120.10350545613704,
+      "y": 221.97427110585002,
+      "values": [
+        {
+          "name": "value",
+          "value": "123"
+        }
+      ]
+    },
+    {
+      "key": "node-<-6b615900bfc0e6fc00177b16ce61",
+      "type": "<",
+      "x": 50.18304916989126,
+      "y": 222.22093326303852,
+      "values": [
+        {
+          "name": "b",
+          "value": "122"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "node-event-68740392e6ec3450e5d3177912b4:",
+      "to": "node-if-22b540c1ed59b42606e152b69dea:"
+    },
+    {
+      "from": "node-if-22b540c1ed59b42606e152b69dea:true",
+      "to": "node-log-e48f2eed3e78c5e33f31ee19faa7:"
+    },
+    {
+      "from": "node-if-22b540c1ed59b42606e152b69dea:false",
+      "to": "node-log-12a3e3806a37b4421119a6e76f72:"
+    },
+    {
+      "from": "node-number-533e7dc35364c5cef91bf79fb8d2:",
+      "to": "node-<-6b615900bfc0e6fc00177b16ce61:a"
+    },
+    {
+      "from": "node-<-6b615900bfc0e6fc00177b16ce61:condition",
+      "to": "node-if-22b540c1ed59b42606e152b69dea:condition"
+    }
+  ]
+}

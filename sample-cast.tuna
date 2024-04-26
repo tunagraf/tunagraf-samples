@@ -1,0 +1,363 @@
+{
+  "formatVersion": "0.2",
+  "nodes": [
+    {
+      "key": "nodedadc042e89cc3657f308ff670efa",
+      "x": 589.1362852906393,
+      "y": 448.4050540894625,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ],
+      "type": "event"
+    },
+    {
+      "key": "node2f052da8b47994d70d3e7bb74594",
+      "x": 619,
+      "y": 922,
+      "typeDesc": {
+        "params": [
+          {
+            "name": "value",
+            "type": "number",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "money-tax8"
+        },
+        {
+          "name": "input",
+          "value": "money-tax8"
+        }
+      ],
+      "type": "type"
+    },
+    {
+      "key": "node105c2ff0a5c0cb969ded6571af74",
+      "x": 620,
+      "y": 1013,
+      "typeDesc": {
+        "params": [
+          {
+            "name": "value",
+            "type": "number",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "money-tax10"
+        },
+        {
+          "name": "input",
+          "value": "money-tax10"
+        }
+      ],
+      "type": "type"
+    },
+    {
+      "key": "node31b27230718aa1c3313cb0ac7f74",
+      "x": 620,
+      "y": 836,
+      "typeDesc": {
+        "params": [
+          {
+            "name": "value",
+            "type": "number",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "money-notax"
+        },
+        {
+          "name": "input",
+          "value": "money-notax"
+        }
+      ],
+      "type": "type"
+    },
+    {
+      "key": "node3cd11bfc3e956733b0ad28845ad7",
+      "x": 1203.853,
+      "y": 766.9999999999999,
+      "funcDesc": {
+        "params": [
+          {
+            "name": "value",
+            "type": "node31b27230718aa1c3313cb0ac7f74",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "money-notax-to-money-8tax"
+        }
+      ],
+      "type": "func"
+    },
+    {
+      "key": "node0ae9717d6452dc32a736d9c0fdde",
+      "x": 2337.594,
+      "y": 767.3309999999999,
+      "type": "return"
+    },
+    {
+      "key": "node11aaf4d9b56f88db71aa9736b46f",
+      "x": 2056.514415003537,
+      "y": 844.1466979029274,
+      "type": "node2f052da8b47994d70d3e7bb74594",
+      "isMake": true
+    },
+    {
+      "key": "node61fc70d553901c3789d607e96c71",
+      "x": 1852.4976602674394,
+      "y": 845.1508865869519,
+      "values": [
+        {
+          "name": "b",
+          "value": "1.08"
+        }
+      ],
+      "type": "*"
+    },
+    {
+      "key": "node3f03cf0a493f098fee8ca0db1f33",
+      "x": 1559.5269810556101,
+      "y": 844.1508865869519,
+      "type": "node31b27230718aa1c3313cb0ac7f74",
+      "isBreak": true
+    },
+    {
+      "isFunc": true,
+      "key": "node0fb2d8efb86949d705aff945ecb9",
+      "x": 1004,
+      "y": 450,
+      "type": "node3cd11bfc3e956733b0ad28845ad7"
+    },
+    {
+      "key": "nodeff25af7e1f4fa077b3f3609e9305",
+      "x": 1312,
+      "y": 510,
+      "type": "node2f052da8b47994d70d3e7bb74594",
+      "isBreak": true
+    },
+    {
+      "key": "node2d6004b52ac8fc06054a95745485",
+      "x": 1612,
+      "y": 452,
+      "type": "log"
+    },
+    {
+      "key": "node01fd54dd5982e9fa058f345d6abb",
+      "x": 591.7322528669878,
+      "y": 561.4184302097073,
+      "values": [
+        {
+          "name": "value",
+          "value": "123"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "key": "nodec1d5384993d17e32820219096cee",
+      "x": 1629.3887544828058,
+      "y": 900.1550752709762,
+      "values": [
+        {
+          "name": "value",
+          "value": "1.08"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "key": "node-type-318f9dd7c9b6216080853df6e442",
+      "x": 612.5440110998127,
+      "y": 1095.6795037745037,
+      "values": [
+        {
+          "name": "input",
+          "value": "SampleType"
+        }
+      ],
+      "typeDesc": {
+        "params": [
+          {
+            "name": "abc",
+            "type": "number",
+            "isArray": false
+          },
+          {
+            "name": "de",
+            "type": "boolean",
+            "isArray": false
+          },
+          {
+            "name": "value3",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "type": "type"
+    },
+    {
+      "key": "node-node-type-318f9dd7c9b6216080853df6e442-c76d1490e36f74e3a4f3bb12843a",
+      "x": 1704.2937520670926,
+      "y": 612.2942443201111,
+      "values": [
+        {
+          "name": "abc",
+          "value": "123"
+        },
+        {
+          "name": "de",
+          "value": "true"
+        },
+        {
+          "name": "value3",
+          "value": "abc"
+        }
+      ],
+      "type": "node-type-318f9dd7c9b6216080853df6e442",
+      "isMake": true
+    },
+    {
+      "key": "node-log-0c0a6b0a8a59a4a9f9131e718f1c",
+      "x": 2206.155282020341,
+      "y": 453.8183540018763,
+      "type": "log"
+    },
+    {
+      "key": "node-json.stringify-608a15e1242366f723d4151dee33",
+      "x": 1987.7991622790469,
+      "y": 541.5836795045168,
+      "type": "json.stringify"
+    },
+    {
+      "key": "node-node-type-318f9dd7c9b6216080853df6e442-fd6c478a08562b4aa44c91226a45",
+      "x": 2200.3260416708904,
+      "y": 611.1637805843704,
+      "type": "node-type-318f9dd7c9b6216080853df6e442",
+      "isBreak": true
+    },
+    {
+      "key": "node-log-20f3d2a786b903982cf06c7360e7",
+      "x": 2474.2583619464704,
+      "y": 453.9504198901999,
+      "type": "log"
+    },
+    {
+      "key": "node-log-5e15ff7213f91e06fad3548e7344",
+      "x": 2699.9510336158505,
+      "y": 453.3414933893432,
+      "values": [
+        {
+          "name": "value",
+          "value": "finished"
+        }
+      ],
+      "type": "log"
+    },
+    {
+      "key": "node-node31b27230718aa1c3313cb0ac7f74-6d863277830685f929dba61b5e5c",
+      "x": 751.3649635578247,
+      "y": 561.4788507258163,
+      "type": "node31b27230718aa1c3313cb0ac7f74",
+      "isMake": true
+    }
+  ],
+  "connections": [
+    {
+      "from": "node3f03cf0a493f098fee8ca0db1f33:value",
+      "to": "node61fc70d553901c3789d607e96c71:a"
+    },
+    {
+      "from": "node61fc70d553901c3789d607e96c71:result",
+      "to": "node11aaf4d9b56f88db71aa9736b46f:value"
+    },
+    {
+      "from": "node11aaf4d9b56f88db71aa9736b46f:output",
+      "to": "node0ae9717d6452dc32a736d9c0fdde:value"
+    },
+    {
+      "from": "nodedadc042e89cc3657f308ff670efa:",
+      "to": "node0fb2d8efb86949d705aff945ecb9:"
+    },
+    {
+      "from": "node3cd11bfc3e956733b0ad28845ad7:",
+      "to": "node0ae9717d6452dc32a736d9c0fdde:"
+    },
+    {
+      "from": "node3cd11bfc3e956733b0ad28845ad7:value",
+      "to": "node3f03cf0a493f098fee8ca0db1f33:input"
+    },
+    {
+      "from": "node01fd54dd5982e9fa058f345d6abb:",
+      "to": "node-node31b27230718aa1c3313cb0ac7f74-6d863277830685f929dba61b5e5c:value"
+    },
+    {
+      "from": "node-node31b27230718aa1c3313cb0ac7f74-6d863277830685f929dba61b5e5c:output",
+      "to": "node0fb2d8efb86949d705aff945ecb9:value"
+    },
+    {
+      "from": "node0fb2d8efb86949d705aff945ecb9:",
+      "to": "node2d6004b52ac8fc06054a95745485:"
+    },
+    {
+      "from": "node2d6004b52ac8fc06054a95745485:",
+      "to": "node-log-0c0a6b0a8a59a4a9f9131e718f1c:"
+    },
+    {
+      "from": "node-log-0c0a6b0a8a59a4a9f9131e718f1c:",
+      "to": "node-log-20f3d2a786b903982cf06c7360e7:"
+    },
+    {
+      "from": "nodeff25af7e1f4fa077b3f3609e9305:value",
+      "to": "node2d6004b52ac8fc06054a95745485:value"
+    },
+    {
+      "from": "node-node-type-318f9dd7c9b6216080853df6e442-c76d1490e36f74e3a4f3bb12843a:output",
+      "to": "node-json.stringify-608a15e1242366f723d4151dee33:src"
+    },
+    {
+      "from": "node-json.stringify-608a15e1242366f723d4151dee33:dst",
+      "to": "node-log-0c0a6b0a8a59a4a9f9131e718f1c:value"
+    },
+    {
+      "from": "node-node-type-318f9dd7c9b6216080853df6e442-c76d1490e36f74e3a4f3bb12843a:output",
+      "to": "node-node-type-318f9dd7c9b6216080853df6e442-fd6c478a08562b4aa44c91226a45:input"
+    },
+    {
+      "from": "node-node-type-318f9dd7c9b6216080853df6e442-fd6c478a08562b4aa44c91226a45:abc",
+      "to": "node-log-20f3d2a786b903982cf06c7360e7:value"
+    },
+    {
+      "from": "nodec1d5384993d17e32820219096cee:",
+      "to": "node61fc70d553901c3789d607e96c71:b"
+    },
+    {
+      "from": "node-log-20f3d2a786b903982cf06c7360e7:",
+      "to": "node-log-5e15ff7213f91e06fad3548e7344:"
+    },
+    {
+      "from": "node0fb2d8efb86949d705aff945ecb9:return",
+      "to": "nodeff25af7e1f4fa077b3f3609e9305:input"
+    }
+  ]
+}

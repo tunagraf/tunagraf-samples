@@ -1,0 +1,267 @@
+{
+  "formatVersion": "0.2",
+  "nodes": [
+    {
+      "key": "node-event-8841ecdfc864c97994b96edc7592",
+      "x": 455.79214002838694,
+      "y": -93.76988416988416,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ],
+      "type": "event"
+    },
+    {
+      "key": "node-string.lowerCase-a4a70f9fb436bb410d7dc7f4a0dc",
+      "x": 442.4439686439688,
+      "y": 87.13586233586241,
+      "type": "string.lowerCase"
+    },
+    {
+      "key": "node-string.upperCase-3ee22331fa9205f78101ba6b8c04",
+      "x": 443.049555849556,
+      "y": 158.86897366897378,
+      "type": "string.upperCase"
+    },
+    {
+      "key": "node-string.charAt-e3bb6df416251e9cf0be454d39a3",
+      "x": 443.596142896143,
+      "y": 220.63661683661698,
+      "type": "string.charAt"
+    },
+    {
+      "key": "node-string.lastIndexOf-d1433fcea31a2daea9cf03c6bece",
+      "x": 442.3849684849687,
+      "y": 295.24849264849246,
+      "type": "string.lastIndexOf"
+    },
+    {
+      "key": "node-string.indexOf-ae3fd44a7bcf63c560496c88a598",
+      "x": 443.1085560085562,
+      "y": 5.3782826782827,
+      "type": "string.indexOf"
+    },
+    {
+      "key": "node-string.startsWith-d035cad27b71a9c8541dec6b1a8c",
+      "x": 444.52455982456,
+      "y": 376.03089853089847,
+      "type": "string.startsWith"
+    },
+    {
+      "key": "node-string.endsWith-8a68647ea53e79235ef7977d5b78",
+      "x": 443.0339702339705,
+      "y": 458.98406698406694,
+      "type": "string.endsWith"
+    },
+    {
+      "key": "node-log-b0009d7c6007981039776693a895",
+      "type": "log",
+      "x": 790.1655410655413,
+      "y": -2.775982575982548
+    },
+    {
+      "key": "node-log-70caddc943040aad6e85c0649174",
+      "type": "log",
+      "x": 791.1841293841297,
+      "y": 69.54378804378811
+    },
+    {
+      "key": "node-log-bb2f5012c8b97bd3014c55c278df",
+      "type": "log",
+      "x": 790.1655410655414,
+      "y": 139.82638202638205
+    },
+    {
+      "key": "node-log-49bf8220f327d35cbe50d01d5eef",
+      "type": "log",
+      "x": 795.258482658483,
+      "y": 213.16474096474113
+    },
+    {
+      "key": "node-log-65e06c016f34dd5aabd0645e2c9f",
+      "type": "log",
+      "x": 795.2584826584829,
+      "y": 283.4473349473348
+    },
+    {
+      "key": "node-log-0c62d6e369e5d74286c974767d13",
+      "type": "log",
+      "x": 797.2956592956596,
+      "y": 366.971577071577
+    },
+    {
+      "key": "node-log-30f0fdc590020bb313db796cd55c",
+      "type": "log",
+      "x": 794.2398943398946,
+      "y": 457.62593742593737
+    },
+    {
+      "key": "node-string-788e7e23e3b62122c693ad21c2b2",
+      "type": "string",
+      "x": 137.25042885042896,
+      "y": 4.354135654135675,
+      "values": [
+        {
+          "name": "value",
+          "value": "abcDEFabcDEF"
+        }
+      ]
+    },
+    {
+      "key": "node-string-f00eb643872c326a4a903d03b87d",
+      "type": "string",
+      "x": 141.3247821247822,
+      "y": 103.15720255720261,
+      "values": [
+        {
+          "name": "value",
+          "value": "cD"
+        }
+      ]
+    },
+    {
+      "key": "node-number-24972159a000e69b599ea1743eb4",
+      "type": "number",
+      "x": 138.26901716901725,
+      "y": 236.59227229227236,
+      "values": [
+        {
+          "name": "value",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "key": "node-string-d1cb75ec2376bfd1b3721ad92ccd",
+      "type": "string",
+      "x": 141.32478212478222,
+      "y": 318.0793377793379,
+      "values": [
+        {
+          "name": "value",
+          "value": "DE"
+        }
+      ]
+    },
+    {
+      "key": "node-string-abf023a2a873aa073fab255c4278",
+      "type": "string",
+      "x": 145.3991353991355,
+      "y": 477.9977037977039,
+      "values": [
+        {
+          "name": "value",
+          "value": "EF"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "node-event-8841ecdfc864c97994b96edc7592:",
+      "to": "node-log-b0009d7c6007981039776693a895:"
+    },
+    {
+      "from": "node-string.indexOf-ae3fd44a7bcf63c560496c88a598:index",
+      "to": "node-log-b0009d7c6007981039776693a895:value"
+    },
+    {
+      "from": "node-string.lowerCase-a4a70f9fb436bb410d7dc7f4a0dc:dst",
+      "to": "node-log-70caddc943040aad6e85c0649174:value"
+    },
+    {
+      "from": "node-string.upperCase-3ee22331fa9205f78101ba6b8c04:dst",
+      "to": "node-log-bb2f5012c8b97bd3014c55c278df:value"
+    },
+    {
+      "from": "node-string.charAt-e3bb6df416251e9cf0be454d39a3:char",
+      "to": "node-log-49bf8220f327d35cbe50d01d5eef:value"
+    },
+    {
+      "from": "node-string.lastIndexOf-d1433fcea31a2daea9cf03c6bece:index",
+      "to": "node-log-65e06c016f34dd5aabd0645e2c9f:value"
+    },
+    {
+      "from": "node-string.startsWith-d035cad27b71a9c8541dec6b1a8c:condition",
+      "to": "node-log-0c62d6e369e5d74286c974767d13:value"
+    },
+    {
+      "from": "node-string.endsWith-8a68647ea53e79235ef7977d5b78:condition",
+      "to": "node-log-30f0fdc590020bb313db796cd55c:value"
+    },
+    {
+      "from": "node-log-b0009d7c6007981039776693a895:",
+      "to": "node-log-70caddc943040aad6e85c0649174:"
+    },
+    {
+      "from": "node-log-70caddc943040aad6e85c0649174:",
+      "to": "node-log-bb2f5012c8b97bd3014c55c278df:"
+    },
+    {
+      "from": "node-log-bb2f5012c8b97bd3014c55c278df:",
+      "to": "node-log-49bf8220f327d35cbe50d01d5eef:"
+    },
+    {
+      "from": "node-log-49bf8220f327d35cbe50d01d5eef:",
+      "to": "node-log-65e06c016f34dd5aabd0645e2c9f:"
+    },
+    {
+      "from": "node-log-65e06c016f34dd5aabd0645e2c9f:",
+      "to": "node-log-0c62d6e369e5d74286c974767d13:"
+    },
+    {
+      "from": "node-log-0c62d6e369e5d74286c974767d13:",
+      "to": "node-log-30f0fdc590020bb313db796cd55c:"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.indexOf-ae3fd44a7bcf63c560496c88a598:text"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.lowerCase-a4a70f9fb436bb410d7dc7f4a0dc:src"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.upperCase-3ee22331fa9205f78101ba6b8c04:src"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.charAt-e3bb6df416251e9cf0be454d39a3:text"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.lastIndexOf-d1433fcea31a2daea9cf03c6bece:text"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.startsWith-d035cad27b71a9c8541dec6b1a8c:text"
+    },
+    {
+      "from": "node-string-788e7e23e3b62122c693ad21c2b2:",
+      "to": "node-string.endsWith-8a68647ea53e79235ef7977d5b78:text"
+    },
+    {
+      "from": "node-string-f00eb643872c326a4a903d03b87d:",
+      "to": "node-string.indexOf-ae3fd44a7bcf63c560496c88a598:searchString"
+    },
+    {
+      "from": "node-number-24972159a000e69b599ea1743eb4:",
+      "to": "node-string.charAt-e3bb6df416251e9cf0be454d39a3:index"
+    },
+    {
+      "from": "node-string-d1cb75ec2376bfd1b3721ad92ccd:",
+      "to": "node-string.lastIndexOf-d1433fcea31a2daea9cf03c6bece:searchString"
+    },
+    {
+      "from": "node-string-abf023a2a873aa073fab255c4278:",
+      "to": "node-string.endsWith-8a68647ea53e79235ef7977d5b78:searchString"
+    },
+    {
+      "from": "node-string-abf023a2a873aa073fab255c4278:",
+      "to": "node-string.startsWith-d035cad27b71a9c8541dec6b1a8c:searchString"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "formatVersion": "0.2",
+  "nodes": [
+    {
+      "key": "node5ed63cbd63583ec0e207171e5129",
+      "x": 396.4084956144258,
+      "y": 188.01152685302287,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ],
+      "type": "event"
+    },
+    {
+      "key": "nodefca96aacca8efe383ec32e560384",
+      "x": 1154.5809479500513,
+      "y": 263.69842008324815,
+      "type": "get"
+    },
+    {
+      "key": "node037122dbd933788319aa064098a3",
+      "x": 644,
+      "y": 266,
+      "type": "get"
+    },
+    {
+      "key": "nodea35e92b0e046120b3c1a05924b5f",
+      "x": 465.4226349678959,
+      "y": 374.10058202162463,
+      "values": [
+        {
+          "name": "value",
+          "value": "sample"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "key": "nodeaa15cad00a08a1c09b9751739a4c",
+      "x": 829,
+      "y": 190,
+      "type": "log"
+    },
+    {
+      "key": "node32f7cdc7797cfde3023fcc2e988f",
+      "x": 1324,
+      "y": 185,
+      "type": "log"
+    },
+    {
+      "key": "nodec37a4b250cec05e156d10e6bb340",
+      "x": 780.882527866803,
+      "y": 380.2497521886958,
+      "values": [
+        {
+          "name": "value",
+          "value": "changedValue"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "key": "noded271f7d5c498939a95e391f176f4",
+      "x": 1022,
+      "y": 188,
+      "type": "set"
+    },
+    {
+      "key": "node6a35d485bbeaca594ddfbdb0caab",
+      "x": 1423,
+      "y": 289,
+      "values": [
+        {
+          "name": "key",
+          "value": "varsample"
+        }
+      ],
+      "type": "get"
+    },
+    {
+      "key": "node73b53dad306ab636ccedef56a603",
+      "x": 1657,
+      "y": 185,
+      "type": "log"
+    },
+    {
+      "key": "node391f94314bce6e47ace02192522d",
+      "x": 1974,
+      "y": 185,
+      "type": "log"
+    },
+    {
+      "key": "noded9ccb05a044cca00cfe4c0e68e51",
+      "x": 1707.2793680332993,
+      "y": 292.86031598335035,
+      "values": [
+        {
+          "name": "key",
+          "value": "OPENAI_API_KEY"
+        }
+      ],
+      "type": "get"
+    }
+  ],
+  "connections": [
+    {
+      "from": "node5ed63cbd63583ec0e207171e5129:",
+      "to": "nodeaa15cad00a08a1c09b9751739a4c:"
+    },
+    {
+      "from": "nodea35e92b0e046120b3c1a05924b5f:",
+      "to": "node037122dbd933788319aa064098a3:key"
+    },
+    {
+      "from": "nodea35e92b0e046120b3c1a05924b5f:",
+      "to": "nodefca96aacca8efe383ec32e560384:key"
+    },
+    {
+      "from": "nodefca96aacca8efe383ec32e560384:value",
+      "to": "node32f7cdc7797cfde3023fcc2e988f:value"
+    },
+    {
+      "from": "node037122dbd933788319aa064098a3:value",
+      "to": "nodeaa15cad00a08a1c09b9751739a4c:value"
+    },
+    {
+      "from": "nodeaa15cad00a08a1c09b9751739a4c:",
+      "to": "noded271f7d5c498939a95e391f176f4:"
+    },
+    {
+      "from": "noded271f7d5c498939a95e391f176f4:",
+      "to": "node32f7cdc7797cfde3023fcc2e988f:"
+    },
+    {
+      "from": "nodea35e92b0e046120b3c1a05924b5f:",
+      "to": "noded271f7d5c498939a95e391f176f4:key"
+    },
+    {
+      "from": "nodec37a4b250cec05e156d10e6bb340:",
+      "to": "noded271f7d5c498939a95e391f176f4:value"
+    },
+    {
+      "from": "node32f7cdc7797cfde3023fcc2e988f:",
+      "to": "node73b53dad306ab636ccedef56a603:"
+    },
+    {
+      "from": "node6a35d485bbeaca594ddfbdb0caab:value",
+      "to": "node73b53dad306ab636ccedef56a603:value"
+    },
+    {
+      "from": "noded9ccb05a044cca00cfe4c0e68e51:value",
+      "to": "node391f94314bce6e47ace02192522d:value"
+    },
+    {
+      "from": "node73b53dad306ab636ccedef56a603:",
+      "to": "node391f94314bce6e47ace02192522d:"
+    }
+  ]
+}
