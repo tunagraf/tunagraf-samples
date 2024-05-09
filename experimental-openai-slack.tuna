@@ -1,0 +1,1038 @@
+{
+  "formatVersion": "0.2",
+  "nodes": [
+    {
+      "key": "nodee5f824bca3121c40252aa4227771",
+      "x": 256.3552597663065,
+      "y": -1404.6747414850572,
+      "values": [
+        {
+          "name": "name",
+          "value": "begin"
+        }
+      ],
+      "type": "event"
+    },
+    {
+      "key": "node001f7a871ba65cd9dc84d60e86fb",
+      "x": 3064.9576111575047,
+      "y": -1047.7992624631324,
+      "values": [
+        {
+          "name": "value",
+          "value": "https://api.openai.com/v1/chat/completions"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "key": "node0ab7854723454a7fbe0f493952ac",
+      "x": 2233.23157808175,
+      "y": -497.70327432399563,
+      "typeDesc": {
+        "params": [
+          {
+            "name": "Content-Type",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "Authorization",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "OpenAI-API-headers"
+        },
+        {
+          "name": "input",
+          "value": "requestHeader"
+        }
+      ],
+      "type": "type"
+    },
+    {
+      "key": "node5d9fbf61f48f362e825f2a13dbbe",
+      "x": 3283.9084376037863,
+      "y": -946.4222376697443,
+      "type": "node0ab7854723454a7fbe0f493952ac",
+      "isMake": true
+    },
+    {
+      "key": "nodee7886ff43a00d81ffe3f258d1654",
+      "x": 3065.346454132711,
+      "y": -960.2982707275955,
+      "values": [
+        {
+          "name": "value",
+          "value": "application/json"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "key": "nodeabb7ee8666e5ab399d24738966eb",
+      "x": 2472.4786855376706,
+      "y": -968.389179818505,
+      "values": [
+        {
+          "name": "value",
+          "value": "Bearer "
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "key": "nodece86f3dd0dedd9b795cebb07e932",
+      "x": 2230.688117603786,
+      "y": -411.4774976697449,
+      "typeDesc": {
+        "params": [
+          {
+            "name": "model",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "messages",
+            "type": "object",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "OpenAI-API-data"
+        },
+        {
+          "name": "input",
+          "value": "requestBody"
+        }
+      ],
+      "type": "type"
+    },
+    {
+      "key": "nodea6eb090184e1835720c7b6fe93f1",
+      "x": 3694.858437603786,
+      "y": -830.7322376697446,
+      "values": [
+        {
+          "name": "url",
+          "value": "undefined"
+        }
+      ],
+      "type": "web.fetch"
+    },
+    {
+      "key": "node36a80516ed99eee2a9a28b2c3fa0",
+      "x": 2930.518437603786,
+      "y": -672.5322376697445,
+      "values": [
+        {
+          "name": "value",
+          "value": "gpt-3.5-turbo"
+        }
+      ],
+      "type": "string"
+    },
+    {
+      "key": "node7d6e819d4bb42b2caecd77babc59",
+      "x": 3476.3784376037856,
+      "y": -669.5022376697444,
+      "type": "json.stringify"
+    },
+    {
+      "key": "nodef686763a1b2cff28a0cc8d312d56",
+      "x": 3180.3784376037856,
+      "y": -669.5022376697444,
+      "type": "nodece86f3dd0dedd9b795cebb07e932",
+      "isMake": true
+    },
+    {
+      "key": "node33196f1b250dacd45dca6ad4a24e",
+      "x": 2231.595110568213,
+      "y": -318.0545903031878,
+      "typeDesc": {
+        "params": [
+          {
+            "name": "role",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "content",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "OpenAI-API-data-message"
+        },
+        {
+          "name": "input",
+          "value": "query"
+        }
+      ],
+      "type": "type"
+    },
+    {
+      "key": "node2f8a4c194fda2c637c03227de7d7",
+      "x": 2625.468437603786,
+      "y": -723.5622376697445,
+      "values": [
+        {
+          "name": "role",
+          "value": "user"
+        },
+        {
+          "name": "content",
+          "value": "hello"
+        }
+      ],
+      "type": "node33196f1b250dacd45dca6ad4a24e",
+      "isMake": true
+    },
+    {
+      "key": "nodee0d3d96548b77c3f05d74d795952",
+      "x": 2720.058437603786,
+      "y": -826.1322376697444,
+      "type": "array.new"
+    },
+    {
+      "key": "nodedbc7c0747215c1959f79ea80bfc4",
+      "x": 2982.288437603786,
+      "y": -827.3422376697445,
+      "type": "array.push"
+    },
+    {
+      "key": "node9542e30e34536cf556c167805fc7",
+      "x": 2229.476545041802,
+      "y": -825.9412376697445,
+      "funcDesc": {
+        "params": [
+          {
+            "name": "Message",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "values": [
+        {
+          "name": "name",
+          "value": "OpenAI-ChatCompletions"
+        }
+      ],
+      "type": "func"
+    },
+    {
+      "key": "node9eadf4371496dd906e5c1a267940",
+      "x": 4152.486867315869,
+      "y": -830.2922376697445,
+      "type": "return"
+    },
+    {
+      "key": "nodedb4e49b8c5a270f61bbe792365a2",
+      "x": 4156.59597729372,
+      "y": -696.6195676033021,
+      "values": [
+        {
+          "name": "",
+          "value": "undefined"
+        },
+        {
+          "name": "value",
+          "value": "undefined"
+        }
+      ],
+      "type": "return"
+    },
+    {
+      "isFunc": true,
+      "key": "node668a4d594009bc976892c47d04ae",
+      "x": 450.3791094406878,
+      "y": -867.4219606583455,
+      "values": [
+        {
+          "name": "Message",
+          "value": "こんにちは！"
+        }
+      ],
+      "type": "node9542e30e34536cf556c167805fc7"
+    },
+    {
+      "key": "nodea2bf99317717efa3d49c1f011777",
+      "x": 3951.4184376037856,
+      "y": -697.3422376697445,
+      "type": "log"
+    },
+    {
+      "key": "node087f2d4c90a1d4996f63fd136e03",
+      "x": 1163.5480774103216,
+      "y": -726.673340469278,
+      "values": [
+        {
+          "name": "query",
+          "value": "message.content"
+        }
+      ],
+      "type": "json.query"
+    },
+    {
+      "key": "nodeaafef507d97254b936ad825ab0e3",
+      "x": 914.8817483270702,
+      "y": -868.897173609426,
+      "type": "array.forEach"
+    },
+    {
+      "key": "node270cff22339549c7731e3656e47b",
+      "x": 723.6030361721456,
+      "y": -812.5679863567968,
+      "values": [
+        {
+          "name": "query",
+          "value": "choices"
+        }
+      ],
+      "type": "json.query"
+    },
+    {
+      "key": "node0890c1c7b4c7603c259607e0036c",
+      "x": 1747.4061007775658,
+      "y": -865.0229581727459,
+      "values": [
+        {
+          "name": "value",
+          "value": "finished"
+        }
+      ],
+      "type": "log"
+    },
+    {
+      "key": "nodee50b4f432f99034461e1f4b5956b",
+      "x": 3949.0744376037856,
+      "y": -783.2092376697444,
+      "type": "json.parse"
+    },
+    {
+      "key": "nodec57011b30798ee4098974268112c",
+      "x": 2467.058437603786,
+      "y": -907.1322376697444,
+      "values": [
+        {
+          "name": "key",
+          "value": "OPENAI_API_KEY"
+        }
+      ],
+      "type": "get"
+    },
+    {
+      "key": "node8f9bd67527f355afec21928963cf",
+      "x": 2807.058437603786,
+      "y": -925.1322376697444,
+      "type": "+"
+    },
+    {
+      "key": "node-type-605f191f2f61ace355e8ac0d477a",
+      "x": 2258.887226545986,
+      "y": 403.9826621738218,
+      "values": [
+        {
+          "name": "name",
+          "value": "slack-message-request-body"
+        }
+      ],
+      "typeDesc": {
+        "params": [
+          {
+            "name": "channel",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "type": "type"
+    },
+    {
+      "key": "node-type-387a58b956f7faff297c73cc52e5",
+      "x": 2260.097226545986,
+      "y": 322.9126621738217,
+      "values": [
+        {
+          "name": "name",
+          "value": "slack-message-request-header"
+        }
+      ],
+      "typeDesc": {
+        "params": [
+          {
+            "name": "Content-Type",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "Authorization",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "type": "type"
+    },
+    {
+      "key": "node-func-4e4810c625f4415391c1a3cfc0bb",
+      "x": 2393.0135946892847,
+      "y": -25.436761833157725,
+      "values": [
+        {
+          "name": "name",
+          "value": "Slack.SendMessageToChannel"
+        }
+      ],
+      "funcDesc": {
+        "params": [
+          {
+            "name": "message",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "channel",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      },
+      "type": "func"
+    },
+    {
+      "key": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3",
+      "x": 3658.7060838141165,
+      "y": -25.21967766612095,
+      "values": [
+        {
+          "name": "url",
+          "value": "https://slack.com/api/chat.postMessage"
+        },
+        {
+          "name": "header",
+          "value": "undefined"
+        }
+      ],
+      "type": "web.fetch"
+    },
+    {
+      "key": "node-log-c0eef97c2f2e43819cc337ef0ce4",
+      "x": 4376.236083814118,
+      "y": -25.21967766612095,
+      "type": "log"
+    },
+    {
+      "key": "node-node-type-605f191f2f61ace355e8ac0d477a-6502a11713a2eb30e9ab1574ee1f",
+      "x": 3070.646083814116,
+      "y": 150.23032233387931,
+      "values": [
+        {
+          "name": "channel",
+          "value": "undefined"
+        }
+      ],
+      "type": "node-type-605f191f2f61ace355e8ac0d477a",
+      "isMake": true
+    },
+    {
+      "key": "node-node-type-387a58b956f7faff297c73cc52e5-936d2f1f7eaefd42ca9a5053fa71",
+      "x": 3069.436083814116,
+      "y": 71.58032233387922,
+      "values": [
+        {
+          "name": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
+      ],
+      "type": "node-type-387a58b956f7faff297c73cc52e5",
+      "isMake": true
+    },
+    {
+      "key": "node-+-35bde7796aafca2e61299f1382d7",
+      "x": 2802.688850973567,
+      "y": 143.53537566017286,
+      "values": [
+        {
+          "name": "a",
+          "value": "Bearer "
+        }
+      ],
+      "type": "+"
+    },
+    {
+      "key": "node-json.stringify-5a86dfeb32a0feb88f9adc86eae6",
+      "x": 4135.446083814117,
+      "y": 21.970322333879107,
+      "type": "json.stringify"
+    },
+    {
+      "key": "node-node-func-4e4810c625f4415391c1a3cfc0bb-fffccd6e2318db007d63e3b67619",
+      "x": 1642.63693399069,
+      "y": -746.030828106988,
+      "values": [
+        {
+          "name": "message",
+          "value": "sample"
+        },
+        {
+          "name": "channel",
+          "value": "SLACK_API_TOKEN"
+        }
+      ],
+      "isFunc": true,
+      "type": "node-func-4e4810c625f4415391c1a3cfc0bb"
+    },
+    {
+      "key": "node-log-8a9af1b649750e6b300a3cf6c0bd",
+      "x": 4279.4360838141165,
+      "y": 144.18032233387913,
+      "type": "log"
+    },
+    {
+      "key": "node-json.stringify-b57fbdbf28bb9ca1612847b2e296",
+      "x": 3405.816083814116,
+      "y": 150.23032233387931,
+      "type": "json.stringify"
+    },
+    {
+      "key": "node-get-766a1e3194a83f69a6cdda5306e9",
+      "x": 1350.9512838586775,
+      "y": -637.9204141642299,
+      "values": [
+        {
+          "name": "key",
+          "value": "SLACK_API_KEY"
+        }
+      ],
+      "type": "get"
+    },
+    {
+      "key": "node-get-df1d580c995f162345583ab405b7",
+      "x": 2431.8064760401126,
+      "y": 165.86553644271217,
+      "values": [
+        {
+          "name": "key",
+          "value": "SLACK_BEARER_TOKEN"
+        }
+      ],
+      "type": "get"
+    },
+    {
+      "key": "node-func-72020a3010528d481ad9b0b01057",
+      "type": "func",
+      "x": 2237.926958299954,
+      "y": -1406.809770562646,
+      "values": [
+        {
+          "name": "name",
+          "value": "ai-if"
+        }
+      ],
+      "funcDesc": {
+        "params": [
+          {
+            "name": "入力",
+            "type": "string",
+            "isArray": false
+          },
+          {
+            "name": "条件",
+            "type": "string",
+            "isArray": false
+          }
+        ]
+      }
+    },
+    {
+      "key": "node-string-8d3eea0b0b38289e53dc5097a439",
+      "type": "string",
+      "x": 2470.9173938749636,
+      "y": -1369.6962498515825,
+      "values": [
+        {
+          "name": "value",
+          "value": "以下入力が条件合致するならtrue,しないならfalseを返事して: 入力="
+        }
+      ]
+    },
+    {
+      "key": "node-string-b347ffe865a49f9285437c560b6d",
+      "type": "string",
+      "x": 2858.5474990794055,
+      "y": -1276.9124480739235,
+      "values": [
+        {
+          "name": "value",
+          "value": "/ 条件="
+        }
+      ]
+    },
+    {
+      "key": "node-+-d04ff789f20856b4444dac530646",
+      "type": "+",
+      "x": 3016.2799621014256,
+      "y": -1273.8196546813354
+    },
+    {
+      "key": "node-+-c96642b7865bbbdfe655b265d0b9",
+      "type": "+",
+      "x": 3009.0634441853854,
+      "y": -1357.3250762812281
+    },
+    {
+      "key": "node-node9542e30e34536cf556c167805fc7-5e241162d155049987709db766f9",
+      "type": "node9542e30e34536cf556c167805fc7",
+      "x": 3319.3737145751115,
+      "y": -1408.8716328243718,
+      "values": [
+        {
+          "name": "",
+          "value": "undefined"
+        },
+        {
+          "name": "Message",
+          "value": "undefined"
+        }
+      ],
+      "isFunc": true
+    },
+    {
+      "key": "node-+-6af464dbbb0801580664cadc01f1",
+      "type": "+",
+      "x": 3168.857769469131,
+      "y": -1356.2941451503652
+    },
+    {
+      "key": "node-!=-4992173ab95312e5bb4932424774",
+      "type": "!=",
+      "x": 4151.1953741360985,
+      "y": -1316.750171668143,
+      "values": [
+        {
+          "name": "b",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "key": "node-return-7e1ba2e65c75045eaddb8e597a7a",
+      "type": "return",
+      "x": 4402.263774433477,
+      "y": -1405.5726532056103
+    },
+    {
+      "key": "node-node-func-72020a3010528d481ad9b0b01057-122d5734991a976bf81a51382c4f",
+      "type": "node-func-72020a3010528d481ad9b0b01057",
+      "x": 452.412079777518,
+      "y": -1406.3186079166117,
+      "values": [
+        {
+          "name": "入力",
+          "value": ""
+        },
+        {
+          "name": "条件",
+          "value": "犯人探しをする人物である"
+        },
+        {
+          "name": "",
+          "value": "undefined"
+        }
+      ],
+      "isFunc": true
+    },
+    {
+      "key": "node-string.indexOf-8b6adc3b86a6c5ecd97140051c55",
+      "type": "string.indexOf",
+      "x": 3926.696457529255,
+      "y": -1316.030939153655,
+      "values": [
+        {
+          "name": "searchString",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "key": "node-json.stringify-ee0bf53781044b4783b809319bed",
+      "type": "json.stringify",
+      "x": 3700.398550303103,
+      "y": -1319.3872230379268,
+      "values": [
+        {
+          "name": "src",
+          "value": "undefined"
+        }
+      ]
+    },
+    {
+      "key": "node-log-e1302d762393162629d4ca91faf2",
+      "type": "log",
+      "x": 2463.1781001545646,
+      "y": -721.7564464767172
+    },
+    {
+      "key": "node-log-7d88cd442cd15b0eae2e3dc10e8c",
+      "type": "log",
+      "x": 851.4152209110421,
+      "y": -1406.8658540970055
+    },
+    {
+      "key": "node-string-4034e74ddbcafbbb6dc6fe44ccbb",
+      "type": "string",
+      "x": 217.08558792051363,
+      "y": -1307.2267082751016,
+      "values": [
+        {
+          "name": "value",
+          "value": "探偵"
+        }
+      ]
+    },
+    {
+      "key": "node-node-func-72020a3010528d481ad9b0b01057-783e7601074f00650741d46406a4",
+      "type": "node-func-72020a3010528d481ad9b0b01057",
+      "x": 853.5008346316436,
+      "y": -1328.8286372847253,
+      "values": [
+        {
+          "name": "条件",
+          "value": "実力行使ができる"
+        }
+      ],
+      "isFunc": true
+    },
+    {
+      "key": "node-log-dfe4b406fcb54abbb7e58b18926b",
+      "type": "log",
+      "x": 1182.0640329627463,
+      "y": -1326.46061423369
+    },
+    {
+      "key": "node-comment-145ec6a4f60246e56ff771035e2d",
+      "type": "comment",
+      "x": 217.96734748508916,
+      "y": -1548.1051109266803,
+      "values": [
+        {
+          "name": "comment",
+          "value": "NOTE: 事前に config に OPENAI_API_KEY を設定してください。"
+        }
+      ]
+    },
+    {
+      "key": "node-comment-b40b2359ad8c5a6b31aa4d59dab5",
+      "type": "comment",
+      "x": 227.40797118160057,
+      "y": -988.8908560978457,
+      "values": [
+        {
+          "name": "comment",
+          "value": "NOTE: ここを実行すると、OpenAI APIに問い合わせした結果をSlackに通知できます。"
+        }
+      ]
+    },
+    {
+      "key": "node-comment-544dd799eff4b4e02357fb5228d4",
+      "type": "comment",
+      "x": 227.4833972138672,
+      "y": -932.6217754247293,
+      "values": [
+        {
+          "name": "comment",
+          "value": "NOTE: Slack通知をする場合は、事前に config に SLACK_API_TOKEN の設定が必要です。"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "from": "node001f7a871ba65cd9dc84d60e86fb:",
+      "to": "nodea6eb090184e1835720c7b6fe93f1:url"
+    },
+    {
+      "from": "node5d9fbf61f48f362e825f2a13dbbe:output",
+      "to": "nodea6eb090184e1835720c7b6fe93f1:header"
+    },
+    {
+      "from": "node7d6e819d4bb42b2caecd77babc59:dst",
+      "to": "nodea6eb090184e1835720c7b6fe93f1:body"
+    },
+    {
+      "from": "nodee7886ff43a00d81ffe3f258d1654:",
+      "to": "node5d9fbf61f48f362e825f2a13dbbe:Content-Type"
+    },
+    {
+      "from": "node36a80516ed99eee2a9a28b2c3fa0:",
+      "to": "nodef686763a1b2cff28a0cc8d312d56:model"
+    },
+    {
+      "from": "nodef686763a1b2cff28a0cc8d312d56:output",
+      "to": "node7d6e819d4bb42b2caecd77babc59:src"
+    },
+    {
+      "from": "node2f8a4c194fda2c637c03227de7d7:output",
+      "to": "nodedbc7c0747215c1959f79ea80bfc4:element"
+    },
+    {
+      "from": "nodee0d3d96548b77c3f05d74d795952:array",
+      "to": "nodedbc7c0747215c1959f79ea80bfc4:array"
+    },
+    {
+      "from": "nodee0d3d96548b77c3f05d74d795952:",
+      "to": "nodedbc7c0747215c1959f79ea80bfc4:"
+    },
+    {
+      "from": "nodee0d3d96548b77c3f05d74d795952:array",
+      "to": "nodef686763a1b2cff28a0cc8d312d56:messages"
+    },
+    {
+      "from": "node9542e30e34536cf556c167805fc7:Message",
+      "to": "node2f8a4c194fda2c637c03227de7d7:content"
+    },
+    {
+      "from": "nodea6eb090184e1835720c7b6fe93f1:success",
+      "to": "node9eadf4371496dd906e5c1a267940:"
+    },
+    {
+      "from": "nodea6eb090184e1835720c7b6fe93f1:failure",
+      "to": "nodea2bf99317717efa3d49c1f011777:"
+    },
+    {
+      "from": "nodea6eb090184e1835720c7b6fe93f1:error",
+      "to": "nodea2bf99317717efa3d49c1f011777:value"
+    },
+    {
+      "from": "nodea2bf99317717efa3d49c1f011777:",
+      "to": "nodedb4e49b8c5a270f61bbe792365a2:"
+    },
+    {
+      "from": "nodea6eb090184e1835720c7b6fe93f1:error",
+      "to": "nodedb4e49b8c5a270f61bbe792365a2:value"
+    },
+    {
+      "from": "node270cff22339549c7731e3656e47b:dst",
+      "to": "nodeaafef507d97254b936ad825ab0e3:array"
+    },
+    {
+      "from": "nodeaafef507d97254b936ad825ab0e3:item",
+      "to": "node087f2d4c90a1d4996f63fd136e03:src"
+    },
+    {
+      "from": "nodeaafef507d97254b936ad825ab0e3:finished",
+      "to": "node0890c1c7b4c7603c259607e0036c:"
+    },
+    {
+      "from": "nodea6eb090184e1835720c7b6fe93f1:data",
+      "to": "nodee50b4f432f99034461e1f4b5956b:src"
+    },
+    {
+      "from": "nodee50b4f432f99034461e1f4b5956b:dst",
+      "to": "node9eadf4371496dd906e5c1a267940:value"
+    },
+    {
+      "from": "node8f9bd67527f355afec21928963cf:result",
+      "to": "node5d9fbf61f48f362e825f2a13dbbe:Authorization"
+    },
+    {
+      "from": "nodec57011b30798ee4098974268112c:value",
+      "to": "node8f9bd67527f355afec21928963cf:b"
+    },
+    {
+      "from": "nodeabb7ee8666e5ab399d24738966eb:",
+      "to": "node8f9bd67527f355afec21928963cf:a"
+    },
+    {
+      "from": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:success",
+      "to": "node-log-c0eef97c2f2e43819cc337ef0ce4:"
+    },
+    {
+      "from": "node-+-35bde7796aafca2e61299f1382d7:result",
+      "to": "node-node-type-387a58b956f7faff297c73cc52e5-936d2f1f7eaefd42ca9a5053fa71:Authorization"
+    },
+    {
+      "from": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:data",
+      "to": "node-json.stringify-5a86dfeb32a0feb88f9adc86eae6:src"
+    },
+    {
+      "from": "node-json.stringify-5a86dfeb32a0feb88f9adc86eae6:dst",
+      "to": "node-log-c0eef97c2f2e43819cc337ef0ce4:value"
+    },
+    {
+      "from": "node-func-4e4810c625f4415391c1a3cfc0bb:",
+      "to": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:"
+    },
+    {
+      "from": "node-func-4e4810c625f4415391c1a3cfc0bb:",
+      "to": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:"
+    },
+    {
+      "from": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:failure",
+      "to": "node-log-8a9af1b649750e6b300a3cf6c0bd:"
+    },
+    {
+      "from": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:error",
+      "to": "node-log-8a9af1b649750e6b300a3cf6c0bd:value"
+    },
+    {
+      "from": "node-node-type-387a58b956f7faff297c73cc52e5-936d2f1f7eaefd42ca9a5053fa71:output",
+      "to": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:header"
+    },
+    {
+      "from": "node-node-type-605f191f2f61ace355e8ac0d477a-6502a11713a2eb30e9ab1574ee1f:output",
+      "to": "node-json.stringify-b57fbdbf28bb9ca1612847b2e296:src"
+    },
+    {
+      "from": "node-func-4e4810c625f4415391c1a3cfc0bb:channel",
+      "to": "node-node-type-605f191f2f61ace355e8ac0d477a-6502a11713a2eb30e9ab1574ee1f:channel"
+    },
+    {
+      "from": "node-func-4e4810c625f4415391c1a3cfc0bb:message",
+      "to": "node-node-type-605f191f2f61ace355e8ac0d477a-6502a11713a2eb30e9ab1574ee1f:text"
+    },
+    {
+      "from": "node-json.stringify-b57fbdbf28bb9ca1612847b2e296:dst",
+      "to": "node-web.fetch-c755a3e9d1dacf9d16a8663769b3:body"
+    },
+    {
+      "from": "node-get-766a1e3194a83f69a6cdda5306e9:value",
+      "to": "node-node-func-4e4810c625f4415391c1a3cfc0bb-fffccd6e2318db007d63e3b67619:channel"
+    },
+    {
+      "from": "node087f2d4c90a1d4996f63fd136e03:dst",
+      "to": "node-node-func-4e4810c625f4415391c1a3cfc0bb-fffccd6e2318db007d63e3b67619:message"
+    },
+    {
+      "from": "node-get-df1d580c995f162345583ab405b7:value",
+      "to": "node-+-35bde7796aafca2e61299f1382d7:b"
+    },
+    {
+      "from": "node668a4d594009bc976892c47d04ae:",
+      "to": "nodeaafef507d97254b936ad825ab0e3:"
+    },
+    {
+      "from": "node-string-b347ffe865a49f9285437c560b6d:",
+      "to": "node-+-d04ff789f20856b4444dac530646:a"
+    },
+    {
+      "from": "node-func-72020a3010528d481ad9b0b01057:条件",
+      "to": "node-+-d04ff789f20856b4444dac530646:b"
+    },
+    {
+      "from": "node-string-8d3eea0b0b38289e53dc5097a439:",
+      "to": "node-+-c96642b7865bbbdfe655b265d0b9:a"
+    },
+    {
+      "from": "node-func-72020a3010528d481ad9b0b01057:入力",
+      "to": "node-+-c96642b7865bbbdfe655b265d0b9:b"
+    },
+    {
+      "from": "node-+-c96642b7865bbbdfe655b265d0b9:result",
+      "to": "node-+-6af464dbbb0801580664cadc01f1:a"
+    },
+    {
+      "from": "node-+-d04ff789f20856b4444dac530646:result",
+      "to": "node-+-6af464dbbb0801580664cadc01f1:b"
+    },
+    {
+      "from": "node-+-6af464dbbb0801580664cadc01f1:result",
+      "to": "node-node9542e30e34536cf556c167805fc7-5e241162d155049987709db766f9:Message"
+    },
+    {
+      "from": "node-func-72020a3010528d481ad9b0b01057:",
+      "to": "node-node9542e30e34536cf556c167805fc7-5e241162d155049987709db766f9:"
+    },
+    {
+      "from": "node-!=-4992173ab95312e5bb4932424774:condition",
+      "to": "node-return-7e1ba2e65c75045eaddb8e597a7a:value"
+    },
+    {
+      "from": "nodee5f824bca3121c40252aa4227771:",
+      "to": "node-node-func-72020a3010528d481ad9b0b01057-122d5734991a976bf81a51382c4f:"
+    },
+    {
+      "from": "node-string.indexOf-8b6adc3b86a6c5ecd97140051c55:index",
+      "to": "node-!=-4992173ab95312e5bb4932424774:a"
+    },
+    {
+      "from": "node-json.stringify-ee0bf53781044b4783b809319bed:dst",
+      "to": "node-string.indexOf-8b6adc3b86a6c5ecd97140051c55:text"
+    },
+    {
+      "from": "node9542e30e34536cf556c167805fc7:Message",
+      "to": "node-log-e1302d762393162629d4ca91faf2:value"
+    },
+    {
+      "from": "nodedbc7c0747215c1959f79ea80bfc4:",
+      "to": "nodea6eb090184e1835720c7b6fe93f1:"
+    },
+    {
+      "from": "node-node-func-72020a3010528d481ad9b0b01057-122d5734991a976bf81a51382c4f:",
+      "to": "node-log-7d88cd442cd15b0eae2e3dc10e8c:"
+    },
+    {
+      "from": "nodeaafef507d97254b936ad825ab0e3:func",
+      "to": "node-node-func-4e4810c625f4415391c1a3cfc0bb-fffccd6e2318db007d63e3b67619:"
+    },
+    {
+      "from": "node-node9542e30e34536cf556c167805fc7-5e241162d155049987709db766f9:",
+      "to": "node-return-7e1ba2e65c75045eaddb8e597a7a:"
+    },
+    {
+      "from": "node9542e30e34536cf556c167805fc7:",
+      "to": "nodee0d3d96548b77c3f05d74d795952:"
+    },
+    {
+      "from": "node668a4d594009bc976892c47d04ae:",
+      "to": "node270cff22339549c7731e3656e47b:src"
+    },
+    {
+      "from": "node-node9542e30e34536cf556c167805fc7-5e241162d155049987709db766f9:return",
+      "to": "node-json.stringify-ee0bf53781044b4783b809319bed:src"
+    },
+    {
+      "from": "node-node-func-72020a3010528d481ad9b0b01057-122d5734991a976bf81a51382c4f:return",
+      "to": "node-log-7d88cd442cd15b0eae2e3dc10e8c:value"
+    },
+    {
+      "from": "node-string-4034e74ddbcafbbb6dc6fe44ccbb:",
+      "to": "node-node-func-72020a3010528d481ad9b0b01057-122d5734991a976bf81a51382c4f:入力"
+    },
+    {
+      "from": "node-log-7d88cd442cd15b0eae2e3dc10e8c:",
+      "to": "node-node-func-72020a3010528d481ad9b0b01057-783e7601074f00650741d46406a4:"
+    },
+    {
+      "from": "node-string-4034e74ddbcafbbb6dc6fe44ccbb:",
+      "to": "node-node-func-72020a3010528d481ad9b0b01057-783e7601074f00650741d46406a4:入力"
+    },
+    {
+      "from": "node-node-func-72020a3010528d481ad9b0b01057-783e7601074f00650741d46406a4:",
+      "to": "node-log-dfe4b406fcb54abbb7e58b18926b:"
+    },
+    {
+      "from": "node-node-func-72020a3010528d481ad9b0b01057-783e7601074f00650741d46406a4:return",
+      "to": "node-log-dfe4b406fcb54abbb7e58b18926b:value"
+    }
+  ]
+}
